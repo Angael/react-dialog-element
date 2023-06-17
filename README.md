@@ -1,5 +1,5 @@
 # react-dialog-element
-React Dialog component using native `<dialog>` element for React.
+React Dialog component using native `<dialog>` element.
 
 Using native HTML element has few benefits over custom dialog components: 
 - Better accessibility
