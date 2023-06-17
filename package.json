@@ -2,11 +2,17 @@
   "name": "react-dialog-element",
   "version": "0.0.1",
   "description": "",
-  "main": "dist/cjs/index.js",
-  "module": "dist/esm/index.js",
-  "types": "dist/index.d.ts",
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./dist/esm/index.js",
+      "require": "./dist/cjs/index.js",
+      "types": "./dist/types.d.ts"
+    }
+  },
+  "types": "dist/types.d.ts",
   "scripts": {
-    "build": "rollup -c --bundleConfigAsCjs",
+    "build": "rollup -c",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
   },
@@ -36,5 +42,9 @@
     "storybook": "7.0.21",
     "tslib": "^2.5.3",
     "typescript": "^5.1.3"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   }
 }
