@@ -1,7 +1,7 @@
 {
   "name": "react-dialog-element",
-  "version": "0.0.1",
-  "description": "",
+  "version": "1.0.0",
+  "description": "React Dialog component using native <dialog> element",
   "type": "module",
   "exports": {
     ".": {
@@ -14,12 +14,8 @@
   "scripts": {
     "build": "rollup -c",
     "build:watch": "rollup -c --watch",
-    "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "storybook": "storybook dev -p 6006"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "devDependencies": {
     "@rollup/plugin-commonjs": "^25.0.1",
     "@rollup/plugin-node-resolve": "^15.1.0",
@@ -45,5 +41,21 @@
   "peerDependencies": {
     "react": ">=16.8.0 || ^17.0.0 || ^18.0.0",
     "react-dom": ">=16.8.0 || ^17.0.0 || ^18.0.0"
+  },
+  "license": "MIT",
+  "keywords": [
+    "react",
+    "dialog",
+    "modal"
+  ],
+  "homepage": "https://github.com/Angael/react-dialog-element",
+  "repository": {
+    "url": "https://github.com/Angael/dunes-node.git",
+    "type": "git"
+  },
+  "author": {
+    "name": "Krzysztof Widacki",
+    "email": "krzysztofwidacki@gmail.com",
+    "url": "https://krzysztof.widacki.me/"
   }
 }
