@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { Meta, StoryObj } from '@storybook/react';
 import Dialog from './Dialog';
 
@@ -10,9 +11,17 @@ export default meta;
 
 type Story = StoryObj<typeof Dialog>;
 
-export const Primary: Story = (args) => <Dialog data-testId="InputField-id" {...args} />;
-Primary.args = {
-  primary: true,
-  disabled: false,
-  text: 'Primary',
+export const Main: Story = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  return (
+    <>
+      <button onClick={() => setIsOpen(true)}>Open</button>
+      <Dialog isOpen={isOpen} setOpen={setIsOpen}>
+        <h1>Dialog</h1>
+        <p>Some text</p>
+        <button onClick={() => setIsOpen(false)}>Close</button>
+      </Dialog>
+    </>
+  );
 };
+Main.args = {};

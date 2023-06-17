@@ -1,9 +1,6 @@
-import { MouseEventHandler } from "react";
+import type { ComponentPropsWithoutRef } from 'react';
 
-export interface ButtonProps {
-  text?: string;
-  primary?: boolean;
-  disabled?: boolean;
-  size?: "small" | "medium" | "large";
-  onClick?: MouseEventHandler<HTMLButtonElement>;
-}
+export type DialogProps = {
+  isOpen: boolean;
+  setOpen: (open: boolean) => void;
+} & ComponentPropsWithoutRef<'dialog'>;
