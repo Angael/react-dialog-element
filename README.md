@@ -4,7 +4,7 @@ React Dialog component using native `<dialog>` element.
 Using native HTML element has few benefits over custom dialog components: 
 - Better accessibility
 - Better performance
-- Small bundle size (1024 bytes long)
+- Small bundle size (about 1kB)
 - Fully styleable
 - Traps focus inside dialog
 - Closes on escape key press

@@ -28,7 +28,9 @@ export const Dialog = ({ isOpen, setOpen, ...props }: DialogProps) => {
     }
   };
 
-  return <dialog ref={ref} {...props} onClick={onClick} />;
+  const onClose = () => setOpen(false);
+
+  return <dialog ref={ref} {...props} onClick={onClick} onClose={onClose} />;
 };
 
 export default Dialog;

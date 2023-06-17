@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.1.0
+- Added onClose, modal should work with forms with method="dialog"
+- Pruned npm package from old types
+
 ## 1.0.2
 - Changed repository link in package.json
 

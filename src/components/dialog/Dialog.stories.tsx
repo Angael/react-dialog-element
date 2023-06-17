@@ -25,3 +25,22 @@ export const Main: Story = () => {
   );
 };
 Main.args = {};
+
+export const WithForm: Story = () => {
+  const [isOpen, setOpen] = useState(false);
+  return (
+    <>
+      <button onClick={() => setOpen(true)}>Open</button>
+      <Dialog isOpen={isOpen} setOpen={setOpen}>
+        <h1>Dialog</h1>
+        <p>Some text</p>
+        <form method="dialog">
+          <input type="text" />
+          <button>Submit</button>
+        </form>
+        <button onClick={() => setOpen(false)}>Close</button>
+      </Dialog>
+    </>
+  );
+};
+WithForm.args = {};
