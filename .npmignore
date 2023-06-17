@@ -7,3 +7,7 @@ docs
 tsconfig.json
 jest.config.js
 README.md
+rollup.config.js
+.prettierrc
+.storybook
+*.stories.tsx
