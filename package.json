@@ -1,6 +1,6 @@
 {
   "name": "react-dialog-element",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "React Dialog component using native <dialog> element",
   "type": "module",
   "exports": {
