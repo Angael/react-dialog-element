@@ -12,14 +12,14 @@ export default meta;
 type Story = StoryObj<typeof Dialog>;
 
 export const Main: Story = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setOpen] = useState(false);
   return (
     <>
-      <button onClick={() => setIsOpen(true)}>Open</button>
-      <Dialog isOpen={isOpen} setOpen={setIsOpen}>
+      <button onClick={() => setOpen(true)}>Open</button>
+      <Dialog isOpen={isOpen} setOpen={setOpen}>
         <h1>Dialog</h1>
         <p>Some text</p>
-        <button onClick={() => setIsOpen(false)}>Close</button>
+        <button onClick={() => setOpen(false)}>Close</button>
       </Dialog>
     </>
   );

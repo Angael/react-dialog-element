@@ -1,23 +1,26 @@
 # react-dialog-element
 React Dialog component using native `<dialog>` element for React.
 
-This has few benefits over custom dialog components: 
+Using native HTML element has few benefits over custom dialog components: 
 - Better accessibility
 - Better performance
-- Smaller bundle size
+- Small bundle size (1024 bytes long)
 - Fully styleable
+- Traps focus inside dialog
+- Closes on escape key press
+- Closes on click outside dialog
 
 ## Usage
 ```jsx
 import { Dialog } from 'react-dialog-element';
 
 const App = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setOpen] = useState(false);
 
   return (
     <>
-      <button onClick={() => setIsOpen(true)}>Open dialog</button>
-      <Dialog isOpen={isOpen} onClose={() => setIsOpen(false)}>
+      <button onClick={() => setOpen(true)}>Open dialog</button>
+      <Dialog isOpen={isOpen} setOpen={setOpen}>
         <h1>Dialog content</h1>
       </Dialog>
     </>
