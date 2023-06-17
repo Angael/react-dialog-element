@@ -14,7 +14,8 @@
   "scripts": {
     "build": "rollup -c",
     "build:watch": "rollup -c --watch",
-    "storybook": "storybook dev -p 6006"
+    "storybook": "storybook dev -p 6006",
+    "publish-to-npm": "npm run build && npm publish"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^25.0.1",
